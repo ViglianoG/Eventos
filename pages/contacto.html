@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="../style.css">
+    <script src="../animate-wow/wow.min.js"></script>
     <link rel="shortcut icon" href="../assets/icons/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +21,7 @@
     <div class="backgroundcolor-black">
         <nav id="boxNav">
             <div class="navAStyle">
-                <div><a href="#">EVENTOS</a>
+                <div class="animate__animated animate__pulse"><a href="#">EVENTOS</a>
                     <ul class="navNone">
                         <li><a href="./fiestas/quince/quince.html">Fiestas de 15</a></li>
                         <li><a href="./fiestas/casamientos/casamientos.html">Casamientos</a>
@@ -25,22 +29,22 @@
                         <li><a href="./fiestas/egresados/egresados.html">Fiestas de Egresados</a></li>
                     </ul>
                 </div>
-                <div><a href="./nosotros.html">SOBRE NOSOTROS</a></div>
-                <div>
+                <div class="animate__animated animate__pulse"><a href="./nosotros.html">SOBRE NOSOTROS</a></div>
+                <div class="animate__animated animate__pulse">
                     <a href="../index.html"><img class="logoHeader" src="../assets/img/logoblancoynegro.png"></a>
                 </div>
-                <div><a href="#">SIMULAR PRESUPUESTO</a></div>
-                <div><a href="./contacto.html">CONTÁCTANOS</a></div>
+                <div class="animate__animated animate__pulse"><a href="#">SIMULAR PRESUPUESTO</a></div>
+                <div class="animate__animated animate__pulse"><a href="./contacto.html">CONTÁCTANOS</a></div>
             </div>
         </nav>
         <header>
         </header>
         <div class="flex-aboutUs">
-            <h1 class="title-contactUs">Contactános</h1>
-            <div class="boxContact">
+            <h1 class="animate__animated animate__backInDown title-contactUs">Contactános</h1>
+            <div class="animate__animated animate__bounce boxContact">
                 <p class="parrafoFancy">Podés comunicarte con nosotros mediante nuestras redes sociales que son:</p>
             </div>
-            <ul class="ordenRedes">
+            <ul class="animate__animated animate__backInUp ordenRedes">
                 <li class="redesContacto"><a target="_blank" href="https://www.instagram.com/eventos.sonados/"><img
                             src="../assets/icons/igcolor.svg"></a></li>
                 <li class="redesContacto"><a target="_blank" href="https://www.facebook.com/eventos.sonados.1"><img
@@ -49,7 +53,7 @@
                 <li class="redesContacto"><a target="_blank" href="#"><img src="../assets/icons/twittercolor.svg"></a>
                 </li>
             </ul>
-            <fieldset>
+            <fieldset class="animate__animated animate__backInUp">
                 <legend>O también podés enviarnos un correo:</legend>
                 <label for="mensaje">Tu mensaje:</label>
                 <textarea name="mensaje" placeholder="Escribí acá lo que quieras decirnos..."></textarea>
@@ -82,7 +86,9 @@
             </ul>
             <p class="footerDerechos footerNav-style">© 2022 EVENTOS SOÑADOS TODOS LOS DERECHOS RESERVADOS.</p>
         </footer>
+        <script>
+            new WOW().init();
+        </script>
 </body>
-</div>
 
 </html>

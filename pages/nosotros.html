@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="../style.css">
+    <script src="../animate-wow/wow.min.js"></script>
     <link rel="shortcut icon" href="../assets/icons/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +21,7 @@
     <div class="backgroundcolor-black">
         <nav id="boxNav">
             <div class="navAStyle">
-                <div><a href="#">EVENTOS</a>
+                <div class="animate__animated animate__pulse"><a href="#">EVENTOS</a>
                     <ul class="navNone">
                         <li><a href="./fiestas/quince/quince.html">Fiestas de 15</a></li>
                         <li><a href="./fiestas/casamientos/casamientos.html">Casamientos</a>
@@ -25,12 +29,12 @@
                         <li><a href="./fiestas/egresados/egresados.html">Fiestas de Egresados</a></li>
                     </ul>
                 </div>
-                <div><a href="./nosotros.html">SOBRE NOSOTROS</a></div>
-                <div>
+                <div class="animate__animated animate__pulse"><a href="./nosotros.html">SOBRE NOSOTROS</a></div>
+                <div class="animate__animated animate__pulse">
                     <a href="../index.html"><img class="logoHeader" src="../assets/img/logoblancoynegro.png"></a>
                 </div>
-                <div><a href="#">SIMULAR PRESUPUESTO</a></div>
-                <div><a href="./contacto.html">CONTÁCTANOS</a></div>
+                <div class="animate__animated animate__pulse"><a href="#">SIMULAR PRESUPUESTO</a></div>
+                <div class="animate__animated animate__pulse"><a href="./contacto.html">CONTÁCTANOS</a></div>
             </div>
         </nav>
         <header>
@@ -48,9 +52,9 @@
                           </li>
                       </ul>-->
                     <div class="flex-aboutUs">
-                        <h1 class="parrafoFancy title-aboutUs">¿Quienes Somos?</h1>
+                        <h1 class="animate__animated animate__backInDown parrafoFancy title-aboutUs">¿Quienes Somos?</h1>
                         <div class="boxAboutUs">
-                            <p class="parrafoFancy">"Somos una empresa dedicada a la organización integral de eventos.
+                            <p class="animate__animated animate__bounce parrafoFancy">"Somos una empresa dedicada a la organización integral de eventos.
                                 Cumpleaños, bodas, eventos privados, etc.
                                 Somos muy felices haciendo lo que nos apasiona y queremos seguir creciendo!!!
                                 Contamos con 10 años de experiencia en el rubro.
@@ -59,8 +63,7 @@
                                 irrepetibles.
                                 Siempre innovando y en la búsqueda de bellas ideas para tu evento"</p>
                         </div>
-                        <video class="boxModelVideo-aboutUs" src="https://www.youtube.com/watch?v=5bRfUInGErM" alt="videoprueba"
-                            controls="on"></video>
+                            <video class="boxModelVideo-aboutUs" src="../assets/video/videoprueba.mp4" alt="videoprueba" controls="on"></video>
                     </div>
                 </article>
             </section>
@@ -82,6 +85,9 @@
             <p class="footerDerechos footerNav-style">© 2022 EVENTOS SOÑADOS TODOS LOS DERECHOS RESERVADOS.</p>
         </footer>
     </div>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>
