@@ -1,0 +1,430 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: black; 
+}
+li{
+    list-style-type: none;
+}
+
+a:hover {
+    color: rgb(182, 152, 21);
+}
+
+@media screen and  (min-width: 320px) {
+
+    .backgroundcolor-grey {
+        background-color: rgb(232, 232 , 232);
+    }
+    .backgroundcolor-black {
+        background-color: black;
+    }
+
+/* Header/Nav */
+
+#boxNav {
+    height: 40px;
+    background-color: rgb(232,232,232);
+    position: sticky;
+    top: 0px;
+    opacity: 90%;
+    z-index: 2;
+}
+.logoHeader{
+    height:40px;
+    width: 85px; 
+}
+.navAStyle {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    width: 100%;
+    font-size: 8px;
+}
+
+.redes {
+    width: 100%;
+    display: none;
+    justify-content: flex-end;
+    list-style-type: none;
+    position: sticky;
+    right: 1%;
+    top: 15%;
+    z-index: 3;
+}
+.headerRedes {
+    width: 25px;
+    height: 25px;
+}
+.boxNavLista {
+    display: inline-block;
+}
+nav div div ul{
+    display: none;
+}
+
+
+/* MAIN */
+
+.title-box {
+    width: 100%;
+    height: 40px;
+    border: 1px solid black;
+    color: rgb(232, 232, 232);
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.h1-escondido {
+    z-index: -1;
+    position: absolute;
+}
+.logo-h1{
+    position: relative;
+    left: 40%;
+}
+
+.tarjetas {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+#gridFiestas {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    row-gap: 1%;
+    margin-top: 1%;
+    margin-bottom: 3%;
+}
+
+.boxVideo {
+    height: auto;
+    width: 300px;
+    border: solid 3px black;
+    border-radius: 15px;
+}
+.boxNosotros {
+    width: 200px;
+    height: auto;
+    padding: 1%;
+    margin-left: 3%;
+    background-color: black;
+    border: solid 2px gray;
+    border-radius: 20px;
+    font-size: 1.2rem;
+}
+
+
+.menuHamburguesa {
+    display: none;
+}
+.menuHamburguesa:hover {
+    display: block;
+    background-color: rgb(232, 232, 232);
+    height: 300px;
+    width: 100px;
+    border: 1px solid black;
+}
+
+
+.parrafoFancy {
+    color: white;
+    text-align: center;
+    font-family: 'Zen Loop', cursive;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: black;
+    height: 50px;
+    width: 100%;
+}
+.footerNav {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    gap: 10%;
+    left: 1%;
+    z-index: 1;
+}
+.footerNav-style {
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    font-size: 7px;
+}
+.footerLogo {
+    position: absolute;
+    left: 38%;
+    z-index: 2;
+    height: 38px;
+    width: 75px;
+}
+.footerLogo:hover {
+    zoom: 98%;
+}
+.footerDerechos {
+    font-size: 7px;
+    position: relative;
+    top: 80%;
+    left: 1%;
+}
+.redes-footer {
+    padding-right: 5%;
+    gap: 0.5%;
+    position: relative;
+    top: 1px;
+}
+.iconoRedesF {
+    width: 25px;
+    height: 25px;
+}
+
+/* ABOUT US*/
+.flex-aboutUs{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.title-aboutUs {
+    font-size: 40px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.boxAboutUs {
+    width: 300px;
+    height: 160px;
+    border: 2px dashed white;
+    border-radius: 20px;
+    padding: 1%;
+    margin-top: 7%;
+    margin-bottom: 15%;
+    font-size: 17px;
+}
+.boxModelVideo-aboutUs {
+    height: auto;
+    width: 310px;
+    border: solid 2px white;
+    border-radius: 15px;
+}
+
+
+/* CONTACT US*/
+.title-contactUs {
+    color: white;
+    font-size: 30px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.boxContact {
+    height: 140px;
+    width: 310px;
+    font-size: 25px;
+    border: 2px dashed white;
+    border-radius: 20px;
+    margin-top: 3%;
+    margin-bottom: 20%;
+}
+.ordenRedes{
+    gap: 15px;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    top: 43%;
+}
+.redesContacto{
+    width: 50px;
+    height: 50px;
+}
+.fieldset {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 1px dashed white;
+    border-radius: 10%;
+    
+}
+
+
+/* QUINCE */
+#fotosQuince{
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    row-gap: 10px;
+    column-gap: 10px;
+    margin-bottom: 10px;
+}
+.fotosQuince-tamaño {
+    width: 100%;
+    border: 1px dashed white;
+}
+.boxQuince {
+    width: 300px;
+    height: 150px;
+    border: 2px dashed white;
+    border-radius: 20px;
+    padding: 1%;
+    margin-top: 7%;
+    margin-bottom: 15%;
+    font-size: 23px;
+}
+}
+
+
+@media screen and  (min-width: 800px) {
+
+/* Header/Nav */
+
+#boxNav {
+    height: 80px;
+}
+.logoHeader{
+    height:80px;
+    width: 170px;
+}
+.navAStyle {
+    font-size: 15px;
+}
+.redes {
+    display: flex;
+}
+.navNone {
+    display: none;
+}
+
+
+/* MAIN */
+
+.title-box {
+    height: 80px;
+}
+.logo-h1{
+    left: 45%;
+}
+
+.boxTarjetaDePresentacion1 {
+    width: 170px;
+    height: 270px;
+}
+
+.boxTarjetaDePresentacion1:hover {
+    zoom: 110%;
+}
+
+#gridFiestas {
+    grid-template-columns: 2fr 2fr 2fr;
+}
+
+.boxIntro {
+    flex-direction: row;
+}
+.boxVideo {
+    height: 300px;
+    width: auto;
+}
+.boxNosotros {
+    width: 300px;
+    font-size: 1.5rem;
+}
+
+
+.menuHamburguesa {
+    display: none;
+}
+.menuHamburguesa:hover {
+    display: block;
+    background-color: rgb(232, 232, 232);
+    height: 300px;
+    width: 100px;
+    border: 1px solid black;
+}
+
+/* FOOTER */
+
+footer {
+    height: 100px;
+}
+.footerNav {
+    left: 5%;
+}
+.footerNav-style {
+    font-size: 15px;
+}
+.footerLogo {
+    left: 43%;
+    height: 75px;
+    width: 150px;
+}
+.footerLogo:hover {
+    zoom: 98%;
+}
+.footerDerechos {
+    font-size: 14px;
+    top: 37%;
+}
+.redes-footer {
+    padding-right: 5%;
+    gap: 0.5%;
+    position: relative;
+    top: 1px;
+}
+.iconoRedesF {
+    width: 25px;
+    height: 25px;
+}
+
+/* ABOUT US*/
+
+.title-aboutUs {
+    font-size: 50px;
+}
+.boxAboutUs {
+    width: 40%;
+    height: 60%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-size: 30px;
+}
+.boxModelVideo-aboutUs {
+    width: 100%;
+    height: auto;
+}
+
+
+
+/* CONTACT US*/
+.title-contactUs {
+    font-size: 50px;
+}
+.boxContact {
+    height: 150px;
+    width: 400px;
+    font-size: 30px;
+    margin-bottom: 5%;
+}
+
+
+/* QUINCE */
+#fotosQuince{
+    grid-template-columns: 2fr 2fr;
+}
+.boxQuince {
+    width: 400px;
+    height: 225px;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    font-size: 30px;
+}
+
+}

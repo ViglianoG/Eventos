@@ -1,42 +1,53 @@
 <!DOCTYPE html>
 <html lang="es">
-    
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-        <script src="./animate-wow/wow.min.js"></script>
-        <link rel="stylesheet" href="style.css">
-        <link rel="shortcut icon" href="./assets/icons/favicon.png">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Zen+Loop:ital@1&display=swap" rel="stylesheet">
-        <title>Eventos Soñados</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./assets/icons/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Loop:ital@1&display=swap" rel="stylesheet">
+    <title>Eventos Soñados</title>
 </head>
 
 <body>
     <div class="backgroundcolor-grey">
+
         <nav id="boxNav">
             <div class="navAStyle">
-                <div class="animate__animated animate__pulse"><a href="#">EVENTOS</a>
-                    <ul class="navNone">
-                        <li><a href="./pages/fiestas/quince/quince.html">Fiestas de 15</a></li>
-                        <li><a href="./pages/fiestas/casamientos/casamientos.html">Casamientos</a>
+
+                <div class="dropdown animate__animated animate__backInRight">
+                    <a class=" btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        EVENTOS
+                    </a>
+
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="./pages/fiestas/quince/quince.html">Fiestas de 15</a></li>
+                        <li><a class="dropdown-item" href="#">Casamientos</a>
                         </li>
-                        <li><a href="./pages/fiestas/egresados/egresados.html">Fiestas de Egresados</a></li>
+                        <li><a class="dropdown-item" href="#">Fiestas de
+                                Egresados</a></li>
                     </ul>
                 </div>
-                <div class="animate__animated animate__pulse"><a href="./pages/nosotros.html">SOBRE NOSOTROS</a></div>
-                <div class="animate__animated animate__pulse">
+
+                <div class="animate__animated animate__backInRight"><a href="./pages/nosotros.html">SOBRE NOSOTROS</a>
+                </div>
+                <div class="animate__animated animate__bounceIn">
                     <a href="index.html"><img class="logoHeader" src="./assets/img/logoblancoynegro.png"></a>
                 </div>
-                <div class="animate__animated animate__pulse"><a href="#">SIMULAR PRESUPUESTO</a></div>
-                <div class="animate__animated animate__pulse"><a href="./pages/contacto.html">CONTÁCTANOS</a></div>
+                <div class="animate__animated animate__backInRight"><a href="#">SIMULAR PRESUPUESTO</a></div>
+                <div class="animate__animated animate__backInRight"><a href="./pages/contacto.html">CONTÁCTANOS</a>
+                </div>
             </div>
         </nav>
+
         <ul class="animate__animated animate__fadeInDownBig redes">
             <li class="headerRedes"><a target="_blank" href="https://www.instagram.com/eventos.sonados/"><img
                         src="./assets/icons/igcolor.svg"></a></li>
@@ -46,15 +57,46 @@
             <li class="headerRedes"><a target="_blank" href="#"><img src="./assets/icons/twittercolor.svg"></a>
             </li>
         </ul>
+
+
         <header>
-            <div id="fotosHeader">
-                <div><img class="imgWidth" src="./assets/img/foto2.jpg" alt="#"></div>
-                <!--<div><img class="imgWidth" src="./assets/img/foto2.jpg" alt="#"></div>
-                <div><img class="imgWidth" src="./assets/img/foto2.jpg" alt="#"></div>
-                <div><img class="imgWidth" src="./assets/img/foto2.jpg" alt="#"></div>
-                <div><img class="imgWidth" src="./assets/img/foto2.jpg" alt="#"></div>-->
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./pages/fiestas/quince/Valen/foto (12).jpeg" class="d-block w-100"
+                            alt="fotoCarrousel1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./pages/fiestas/quince/Valen/foto (11).jpeg" class="d-block w-100"
+                            alt="fotoCarrousel2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./pages/fiestas/quince/Valen/foto (10).jpeg" class="d-block w-100"
+                            alt="fotoCarrousel3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./pages/fiestas/quince/Valen/foto (2).jpeg" class="d-block w-100"
+                            alt="fotoCarrousel4">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./pages/fiestas/quince/Valen/foto (9).jpeg" class="d-block w-100"
+                            alt="fotoCarrousel5">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </header>
+
+
         <main>
             <div class="title-box">
                 <h1 class="h1-escondido">Eventos Soñados</h1>
@@ -63,43 +105,106 @@
             </div>
 
             <!--<div>
-                <img class="menuhamburguesa" src="./assets/icons/menuhamburguesa.svg" alt="hamburguesa" height="40px"
-                    width="40px">
-                <ul class="menuhamburguesa">
-                    <li><a href="#">Eventos</a>
-                        <ul>
-                            <li><a href="./pages/fiestas/quince/quince.html">Fiestas de 15</a></li>
-                            <li><a href="./pages/fiestas/casamientos/casamientos.html">Casamientos</a></li>
-                            <li><a href="./pages/fiestas/egresados/egresados.html">Fiestas de Egresados</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="./pages/nosotros.html">Sobre Nosotros</a></li>
-                    <li><a href="./pages/presupuesto.html">Simular Presupuesto</a></li>
-                    <li><a href="./pages/contacto.html">Contáctanos</a></li>
-                </ul>
-            </div>-->
+                                <img class="menuhamburguesa" src="./assets/icons/menuhamburguesa.svg" alt="hamburguesa" height="40px"
+                                width="40px">
+                                <ul class="menuhamburguesa">
+                                    <li><a href="#">Eventos</a>
+                                        <ul>
+                                            <li><a href="./pages/fiestas/quince/quince.html">Fiestas de 15</a></li>
+                                            <li><a href="./pages/fiestas/casamientos/casamientos.html">Casamientos</a></li>
+                                            <li><a href="./pages/fiestas/egresados/egresados.html">Fiestas de Egresados</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="./pages/nosotros.html">Sobre Nosotros</a></li>
+                                    <li><a href="./pages/presupuesto.html">Simular Presupuesto</a></li>
+                                    <li><a href="./pages/contacto.html">Contáctanos</a></li>
+                                </ul>
+                            </div>-->
+
+
             <section>
-                <article>
-                    <div id="gridFiestas">
-                        <a class="wow animate__animated animate__backInRight boxTarjetaDePresentacion1 parrafoFancy"
-                            href="./pages/fiestas/quince/Valen/valen.html">Cumple "Valen"</a>
-                        <a class="wow animate__animated animate__backInRight boxTarjetaDePresentacion1 boxTarjetaDePresentacion2 parrafoFancy"
-                            href="./pages/fiestas/quince/quince.html">Fiestas 15</a>
-                        <a class="wow animate__animated animate__backInRight boxTarjetaDePresentacion1 boxTarjetaDePresentacion3 parrafoFancy" href="#">Casamiento
-                            "X y Y"</a>
-                    </div>
-                    <div class="boxIntro">
-                        <video class="boxVideo" src="./assets/video/videoprueba.mp4" controls="on" alt="videoprueba"></video>
-                        <div class="boxNosotros parrafoFancy">
-                            <p class="">"Gracias a la confianza de nuestros clientes hemos compartido momentos
-                                únicos e irrepetibles.
-                                Siempre innovando y en la búsqueda de bellas ideas para tu evento."</p>
+                <div class="container-fluid">
+                    <div class="row d-flex justify-content-evenly">
+
+                        <div class="col-sm-12 col-md-3 col-xl-3 mt-5">
+                            <div class="wow animate__animated animate__backInRight card bg-dark text-white">
+                                <img src="./assets/img/imgfiestaprueba1.png" class="card-img" alt="asd">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">Cumple Valen</h5>
+                                    <p class="card-text bg-warning bg-opacity-25 fst-italic">"Lorem ipsum dolor sit
+                                        amet,
+                                        consectetur adipiscing elit. Proin iaculis mollis aliquet. Maecenas vestibulum
+                                        leo
+                                        eros, et ornare lacus tristique at. Vivamus imperdiet, tortor vitae dapibus
+                                        faucibus, lectus eros ornare libero, ac tincidunt nibh dolor."</p>
+                                    <p class="card-text">15/02/22</p>
+                                    <button type="button" class="btn btn-warning"><a
+                                            href="./pages/fiestas/quince/Valen/valen.html">Galería</a></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-3 col-xl-3 mt-5">
+                            <div class="wow animate__animated animate__backInRight card bg-dark text-white">
+                                <img src="./assets/img/imgfiestaprueba2.png" class="card-img" alt="asd">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">Quince Años</h5>
+                                    <p class="card-text bg-dark bg-opacity-25 fst-italic">"Lorem ipsum dolor sit amet,
+                                        consectetur adipiscing elit. Proin iaculis mollis aliquet. Maecenas vestibulum
+                                        leo
+                                        eros, et ornare lacus tristique at. Vivamus imperdiet, tortor vitae dapibus
+                                        faucibus, lectus eros ornare libero, ac tincidunt nibh dolor."</p>
+                                    <button type="button" class="btn btn-warning"><a
+                                            href="./pages/fiestas/quince/quince.html">Página General</a></button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-3 col-xl-3 mt-5">
+                            <div class="wow animate__animated animate__backInRight card bg-dark text-white">
+                                <img src="./assets/img/imgfiestaprueba3.png" class="card-img" alt="asd">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title">Bodas</h5>
+                                    <p class="card-text bg-danger bg-opacity-25 fst-italic">"Lorem ipsum dolor sit amet,
+                                        consectetur adipiscing elit. Proin iaculis mollis aliquet. Maecenas vestibulum
+                                        leo
+                                        eros, et ornare lacus tristique at. Vivamus imperdiet, tortor vitae dapibus
+                                        faucibus, lectus eros ornare libero, ac tincidunt nibh dolor."</p>
+                                    <button type="button" class="btn btn-warning"><a
+                                            href="#">Galería</a></button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </article>
+                
+
+
+                    <div class="row d-flex justify-content-evenly align-items-center">
+
+                        <div class="col-sm-12 col-md-4 col-xl-4 mt-5 mb-5">
+                            <div>
+                            <video class="boxVideo" src="./assets/video/videoEmiMain.mp4" controls="on"
+                                alt="videoEmiMain"></video></div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-4 col-xl-4">
+                            <div class="boxNosotros">
+                                <p class="parrafoFancy">"Gracias a la confianza de nuestros clientes hemos compartido
+                                    momentos
+                                    únicos e irrepetibles.
+                                    Siempre innovando y en la búsqueda de bellas ideas para tu evento."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </section>
+
         </main>
+
+
         <footer>
+
             <div class="footerNav">
                 <a class="footerNav-style" href="./pages/nosotros.html">SOBRE NOSOTROS</a>
                 <a class="footerNav-style" href="./pages/contacto.html">CONTÁCTANOS</a>
@@ -113,12 +218,22 @@
                 <li class="iconoRedesF"><a target="_blank" href="#"><img src="./assets/icons/wppgris.svg"></a></li>
                 <li class="iconoRedesF"><a target="_blank" href="#"><img src="./assets/icons/twittergris.svg"></a></li>
             </ul>
-            <p class="animate_animated animate__backInRight footerDerechos footerNav-style">© 2022 EVENTOS SOÑADOS TODOS LOS DERECHOS RESERVADOS.</p>
+            <p class="footerDerechos footerNav-style">© 2022 EVENTOS SOÑADOS TODOS
+                LOS DERECHOS RESERVADOS.</p>
+
         </footer>
     </div>
+
+
+    <!--Script links-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+    <script src="./animate-wow/wow.min.js"></script>
     <script>
         new WOW().init();
     </script>
+
 </body>
 
 </html>
