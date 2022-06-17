@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="shortcut icon" href="/assets/icons/favicon.png">
+    <link rel="shortcut icon" href="../assets/icons/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zen+Loop:ital@1&display=swap" rel="stylesheet">
@@ -16,50 +18,221 @@
 
 <body>
     <div class="backgroundcolor-grey">
-        <header>
-            <nav id="boxNav">
-                <div class="navAStyle">
-                    <div class="navSections"><a href="#">EVENTOS</a>
-                        <ul class="navNone">
-                            <li><a href="./fiestas/quince/quince.html">Fiestas de 15</a></li>
-                            <li><a href="./fiestas/casamientos/casamientos.html">Casamientos</a>
-                            </li>
-                            <li><a href="./fiestas/egresados/egresados.html">Fiestas de Egresados</a></li>
-                        </ul>
-                    </div>
-                    <div class="navSections"><a href="./nosotros.html">SOBRE NOSOTROS</a></div>
-                    <div class="navSections">
-                        <a href="../index.html"><img src="../assets/img/logoblancoynegro.png" height="80px"
-                                width="170px"></a>
-                    </div>
-                    <div class="navSections"><a href="./presupuesto.html">SIMULAR PRESUPUESTO</a></div>
-                    <div class="navSections"><a href="./contacto.html">CONTÁCTANOS</a></div>
+
+        <nav id="boxNav">
+            <div class="navAStyle">
+
+                <div class="dropdown animate__animated animate__backInRight">
+                    <a class=" btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        EVENTOS
+                    </a>
+
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="./fiestas/quince/quince.html">Fiestas de 15</a></li>
+                        <li><a class="dropdown-item" href="./fiestas/casamientos/casamientos.html">Casamientos</a>
+                        </li>
+                        <li><a class="dropdown-item" href="./fiestas/egresados/egresados.html">Fiestas de
+                                Egresados</a></li>
+                    </ul>
                 </div>
-            </nav>
+
+                <div class="animate__animated animate__backInRight"><a href="./nosotros.html">SOBRE NOSOTROS</a></div>
+                <div class="animate__animated animate__bounceIn">
+                    <a href="../index.html"><img class="logoHeader" src="../assets/img/logoblancoynegro.png"></a>
+                </div>
+                <div class="animate__animated animate__backInRight"><a href="./presupuesto.html">SIMULAR PRESUPUESTO</a>
+                </div>
+                <div class="animate__animated animate__backInRight"><a href="./contacto.html">CONTÁCTANOS</a></div>
+            </div>
+        </nav>
+
+        <!--En Construcción-->
+        
+        <header>
+            <div class="container-fluid">
+                <div class="row d-flex justify-content-center">
+
+                    <div class="col-sm-11 col-md-4 col-xl-4 mb-3 mt-2">
+                        <h1 class="animate__animated animate__backInDown">Simular
+                            Presupuesto
+                        </h1>
+                    </div>
+
+                </div>
+            </div>
         </header>
-        <img class="menuHamburguesa" src="./assets/img/hamburguesa.png" alt="hamburguesa">
-        <ul>
-            <li><a href="#">Eventos</a></li>
-            <ul>
-                <li><a href="./fiestas/quince/quince.html">Fiestas de 15</a></li>
-                <li><a href="./fiestas/casamientos/casamientos.html">Casamientos</a></li>
-                <li><a href="./fiestas/egresados/egresados.html">Fiestas de Egresados</a></li>
-            </ul>
-            <li><a href="./pages/nosotros.html">Sobre Nosotros</a></li>
-            <li><a href="./pages/presupuesto.html">Simular Presupuesto</a></li>
-            <li><a href="./pages/contacto.html">Contáctanos</a></li>
-            </li>
-        </ul>
-        <h1>PRESUPUESTO</h1>
+        <main>
+            <section>
+
+                <div class="container-fluid">
+
+                    <div class="row d-flex justify-content-start align-items-center">
+
+                        <div class="col-sm-12 col-md-6 col-xl-6 mb-5">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="inputGroup-sizing-default">Item Nro 1</span>
+                                <div class="input-group-text">
+                                    <input class="form-check-input mt-0" type="checkbox" value=""
+                                        aria-label="Checkbox for following text input">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-xl-6 mb-2">
+                            <img src="../assets/img/imagen-ejemplo.jpg" class="img-fluid" alt="Ejemplo">
+                        </div>
+
+                    </div>
+
+                    <div class="row d-flex justify-content-start align-items-center">
+
+                        <div class="col-sm-11 col-md-6 col-xl-6 mb-5">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="inputGroup-sizing-default">Item Nro 2</span>
+                                <div class="input-group-text">
+                                    <input class="form-check-input mt-0" type="checkbox" value=""
+                                        aria-label="Checkbox for following text input">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-xl-6 mb-2">
+                            <img src="../assets/img/imagen-ejemplo.jpg" class="img-fluid" alt="Ejemplo">
+                        </div>
+
+                    </div>
+
+                    <div class="row d-flex justify-content-start align-items-center">
+
+                        <div class="col-sm-11 col-md-6 col-xl-6 mb-5">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="inputGroup-sizing-default">Item Nro 3</span>
+                                <div class="input-group-text">
+                                    <input class="form-check-input mt-0" type="checkbox" value=""
+                                        aria-label="Checkbox for following text input">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-xl-6 mb-2">
+                            <img src="../assets/img/imagen-ejemplo.jpg" class="img-fluid" alt="Ejemplo">
+                        </div>
+
+                    </div>
+
+                    <div class="row d-flex justify-content-start align-items-center">
+
+                        <div class="col-sm-11 col-md-6 col-xl-6 mb-5">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="inputGroup-sizing-default">Item Nro 4</span>
+                                <div class="input-group-text">
+                                    <input class="form-check-input mt-0" type="checkbox" value=""
+                                        aria-label="Checkbox for following text input">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-xl-6 mb-2">
+                            <img src="../assets/img/imagen-ejemplo.jpg" class="img-fluid" alt="Ejemplo">
+                        </div>
+
+                    </div>
+
+                    <div class="row d-flex justify-content-start align-items-center">
+
+                        <div class="col-sm-11 col-md-6 col-xl-6 mb-5">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="inputGroup-sizing-default">Item Nro 5</span>
+                                <div class="input-group-text">
+                                    <input class="form-check-input mt-0" type="checkbox" value=""
+                                        aria-label="Checkbox for following text input">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-xl-6 mb-2">
+                            <img src="../assets/img/imagen-ejemplo.jpg" class="img-fluid" alt="Ejemplo">
+                        </div>
+
+                    </div>
+
+                    <div class="row d-flex justify-content-start align-items-center">
+
+                        <div class="col-sm-11 col-md-6 col-xl-6 mb-5">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="inputGroup-sizing-default">Item Nro 6</span>
+                                <div class="input-group-text">
+                                    <input class="form-check-input mt-0" type="checkbox" value=""
+                                        aria-label="Checkbox for following text input">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-xl-6 mb-2">
+                            <img src="../assets/img/imagen-ejemplo.jpg" class="img-fluid" alt="Ejemplo">
+                        </div>
+
+                    </div>
+
+                    <div class="row d-flex justify-content-start align-items-center">
+
+                        <div class="col-sm-11 col-md-6 col-xl-6 mb-5">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="inputGroup-sizing-default">Item Nro 7</span>
+                                <div class="input-group-text">
+                                    <input class="form-check-input mt-0" type="checkbox" value=""
+                                        aria-label="Checkbox for following text input">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-xl-6 mb-2">
+                            <img src="../assets/img/imagen-ejemplo.jpg" class="img-fluid" alt="Ejemplo">
+                        </div>
+
+                    </div>
+
+                    <div class="row d-flex justify-content-start align-items-center">
+
+                        <div class="col-sm-11 col-md-6 col-xl-6 mb-5">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="inputGroup-sizing-default">Item Nro 8</span>
+                                <div class="input-group-text">
+                                    <input class="form-check-input mt-0" type="checkbox" value=""
+                                        aria-label="Checkbox for following text input">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-xl-6 mb-2">
+                            <img src="../assets/img/imagen-ejemplo.jpg" class="img-fluid" alt="Ejemplo">
+                        </div>
+
+                    </div>
+
+                    <div class="row d-flex justify-content-end">
+
+                        <div class="col-sm-3 col-md-3 col-xl-3 mb-5">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="inputGroup-sizing-default">##.###</span>
+                                <span class="input-group-text">$0.00</span>
+                                <button type="button" class="btn btn-secondary">Simular</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </section>
+        </main>
         <footer>
             <div class="footerNav">
                 <a class="footerNav-style" href="./nosotros.html">SOBRE NOSOTROS</a>
                 <a class="footerNav-style" href="./contacto.html">CONTÁCTANOS</a>
             </div>
-            <div class="footerLogo">
-                <a href="../index.html"><img src="../assets/img/logogrisfooter.png" height="75px" width="150px"></a>
-            </div>
-            <ul id="redes">
+            <a href="../index.html"><img class="footerLogo" src="../assets/img/logogrisfooter.png"></a>
+            <ul class="redes redes-footer">
                 <li class="iconoRedesF"><a target="_blank" href="https://www.instagram.com/eventos.sonados/"><img
                             src="../assets/icons/iggris.svg"></a></li>
                 <li class="iconoRedesF"><a target="_blank" href="https://www.facebook.com/eventos.sonados.1"><img
@@ -70,6 +243,16 @@
             <p class="footerDerechos footerNav-style">© 2022 EVENTOS SOÑADOS TODOS LOS DERECHOS RESERVADOS.</p>
         </footer>
     </div>
+
+
+    <!--Script links-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+    <script src="../animate-wow/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>
