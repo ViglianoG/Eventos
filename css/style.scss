@@ -1,0 +1,388 @@
+@import "colores.scss";
+@import "tipografias.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: $negro;
+
+    &:hover {
+        color: $color-a-hover;
+    }
+}
+
+li {
+    list-style-type: none;
+}
+
+/*BACKGROUND*/
+.backgroundcolor-grey {
+    background-color: $gris-soft;
+}
+
+.backgroundcolor-black {
+    background-color: $negro-soft;
+}
+
+
+
+@media screen and (min-width: 320px) {
+
+    /* Header/Nav */
+    nav {
+        height: 40px;
+        background-color: $gris-soft;
+        position: sticky;
+        top: 0px;
+        opacity: 90%;
+        z-index: 2;
+
+        div {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            text-align: center;
+            font-family: 'Roboto Slab', serif;
+            width: 100%;
+            font-size: 8px;
+
+            a {
+                img {
+                    height: 36px;
+                    width: 75px;
+                }
+            }
+        }
+    }
+
+    .redes {
+        width: 100%;
+        display: none;
+        justify-content: flex-end;
+        position: sticky;
+        right: 0px;
+        top: 15%;
+        z-index: 2;
+    }
+
+    .headerRedes {
+        width: 25px;
+        height: 25px;
+    }
+
+
+
+    /* MAIN */
+
+    main {
+        #logo-main {
+            width: 100%;
+            height: 40px;
+            border: 1px solid $negro;
+            color: $gris-soft;
+            margin-top: 1%;
+            margin-bottom: 1%;
+
+            h1 {
+                z-index: -1;
+                position: absolute;
+            }
+
+            img {
+                position: relative;
+                left: 40%;
+                height: 36px;
+                width: 75px;
+            }
+        }
+
+        video {
+            height: auto;
+            width: 300px;
+            border: solid 3px $negro;
+            border-radius: 15px;
+        }
+
+        .boxNosotros {
+            width: 200px;
+            height: auto;
+            padding: 1%;
+            margin-left: 3%;
+            background-color: $negro;
+            border: solid 2px $blanco;
+            border-radius: 20px;
+            font-size: 1.2rem;
+
+            p {
+                color: $blanco;
+                text-align: center;
+                font-family: $text-zen-loop
+            }
+        }
+    }
+
+
+
+    /* FOOTER */
+
+    footer {
+        background-color: $negro;
+        height: 50px;
+        width: 100%;
+
+        div {
+            display: flex;
+            position: absolute;
+            align-items: center;
+            gap: 10%;
+            z-index: 2;
+
+            a {
+                color: $blanco;
+                text-decoration: none;
+                font-family: $roboto;
+                text-align: center;
+                font-size: 7px;
+            }
+        }
+
+
+        ul {
+            padding-right: 5%;
+            gap: 0.5%;
+            position: relative;
+            top: 1px;
+        }
+
+        li {
+            width: 25px;
+            height: 25px;
+        }
+
+        .footerLogo {
+            position: absolute;
+            left: 38%;
+            z-index: 2;
+            height: 38px;
+            width: 75px;
+        }
+
+        p {
+            position: relative;
+            top: 80%;
+            color: $blanco;
+            text-decoration: none;
+            font-family: $roboto;
+            text-align: center;
+            font-size: 7px;
+        }
+    }
+
+
+    /* ABOUT US*/
+    main {
+
+        h1 {
+            font-size: 40px;
+            font-family: $roboto;
+            color: $blanco;
+            text-align: center;
+        }
+
+        p {
+            font-family: $roboto;
+            font-size: 20px;
+            color: $blanco;
+            text-align: center;
+        }
+    }
+
+
+    .boxModelVideo-aboutUs {
+        height: auto;
+        width: 310px;
+        border: solid 2px $blanco;
+        border-radius: 15px;
+    }
+
+
+    /* CONTACT US*/
+
+
+    .boxContact {
+        height: 160px;
+        width: 300px;
+        border: 2px dashed $blanco;
+        border-radius: 20px;
+        margin-top: 3%;
+        margin-bottom: 5%;
+    }
+
+    .ordenRedes {
+        gap: 15px;
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        top: 59%;
+    }
+
+    .redesContacto {
+        width: 50px;
+        height: 50px;
+    }
+
+    .fieldset {
+        color: $blanco;
+        font-family: $roboto;
+        border: 1px dashed $blanco;
+        border-radius: 10%;
+    }
+
+
+    /* QUINCE */
+    #fotosQuince {
+        display: grid;
+        grid-template-columns: 2fr;
+        grid-template-rows: auto;
+        justify-items: center;
+        row-gap: 10px;
+        column-gap: 10px;
+        margin-bottom: 10px;
+
+        div {
+            img {
+                width: 100%;
+                border: 1px dashed $blanco;
+            }
+        }
+    }
+
+}
+
+
+@media screen and (min-width: 800px) {
+
+    /* Header/Nav */
+
+    nav {
+        height: 80px;
+
+        div {
+            font-size: 15px;
+
+            a {
+                img {
+                    height: 80px;
+                    width: 170px;
+                }
+            }
+        }
+    }
+
+    .redes {
+        display: flex;
+    }
+
+
+    /* MAIN */
+
+    main {
+        #logo-main {
+            height: 80px;
+
+            img {
+                left: 44%;
+                height: 80px;
+                width: 170px;
+            }
+        }
+
+        video {
+            height: 300px;
+            width: auto;
+        }
+
+        .boxNosotros {
+            width: 300px;
+            font-size: 3rem;
+        }
+    }
+
+    /* FOOTER */
+
+    footer {
+        height: 100px;
+
+        div {
+
+            a {
+                font-size: 15px;
+            }
+        }
+
+        .footerLogo {
+            left: 43%;
+            height: 75px;
+            width: 150px;
+
+            &:hover {
+                zoom: 99%;
+            }
+        }
+
+        p {
+            font-size: 14px;
+            top: 37%;
+        }
+    }
+
+
+
+
+
+    .redes-footer {
+        padding-right: 5%;
+        gap: 0.5%;
+        position: relative;
+        top: 1px;
+    }
+
+
+    /* ABOUT US*/
+
+
+    .boxModelVideo-aboutUs {
+        width: 100%;
+        height: auto;
+    }
+
+
+
+    /* CONTACT US*/
+
+    .boxContact {
+        height: 160px;
+        width: 400px;
+        margin-bottom: 5%;
+    }
+
+    .ordenRedes {
+        top: 55%;
+    }
+
+    .fieldset{
+        width: 400px;
+    }
+
+
+    /* QUINCE */
+    #fotosQuince {
+        grid-template-columns: 2fr 2fr;
+    }
+
+}
