@@ -20,18 +20,38 @@ li {
     list-style-type: none;
 }
 
+p {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+
+
+
+
 /*BACKGROUND*/
+
+
 .backgroundcolor-grey {
-    background-color: $gris-soft;
+    background-color: map-get($colores-fondo, gris)
 }
 
 .backgroundcolor-black {
-    background-color: $negro-soft;
+    background-color: map-get($colores-fondo, negro)
 }
 
 
 
+
+@mixin subrayado-h1($color, $style) {
+    text-decoration: underline;
+    text-decoration-color: $color;
+    text-decoration-style: $style;
+}
+
+
 @media screen and (min-width: 320px) {
+
 
     /* Header/Nav */
     nav {
@@ -77,6 +97,8 @@ li {
 
 
 
+
+
     /* MAIN */
 
     main {
@@ -101,28 +123,28 @@ li {
             }
         }
 
-        video {
-            height: auto;
-            width: 300px;
-            border: solid 3px $negro;
+        .video-ejemplo {
+            border: dashed 1px $negro-soft;
             border-radius: 15px;
+            height: 45%;
+            width: 90%;
         }
 
         .boxNosotros {
-            width: 200px;
+            width: 310px;
             height: auto;
-            padding: 1%;
-            margin-left: 3%;
+            padding: 1rem;
             background-color: $negro;
-            border: solid 2px $blanco;
+            border: dashed 1px $blanco;
             border-radius: 20px;
-            font-size: 1.2rem;
+        }
 
-            p {
-                color: $blanco;
-                text-align: center;
-                font-family: $text-zen-loop
-            }
+        .parrafo {
+
+            font-family: $roboto;
+            font-size: 20px;
+            color: $blanco;
+            text-align: center;
         }
     }
 
@@ -192,80 +214,75 @@ li {
             font-family: $roboto;
             color: $blanco;
             text-align: center;
-        }
+            @include subrayado-h1(white, dotted )
+        } 
 
-        p {
-            font-family: $roboto;
-            font-size: 20px;
-            color: $blanco;
-            text-align: center;
-        }
     }
 
 
-    .boxModelVideo-aboutUs {
+    .video-ejemplo--nosotros {
+        @extend .video-ejemplo;
         height: auto;
         width: 310px;
-        border: solid 2px $blanco;
-        border-radius: 15px;
-    }
-
-
-    /* CONTACT US*/
-
-
-    .boxContact {
-        height: 160px;
-        width: 300px;
-        border: 2px dashed $blanco;
-        border-radius: 20px;
-        margin-top: 3%;
-        margin-bottom: 5%;
-    }
-
-    .ordenRedes {
-        gap: 15px;
-        display: flex;
-        position: absolute;
-        justify-content: center;
-        top: 59%;
-    }
-
-    .redesContacto {
-        width: 50px;
-        height: 50px;
-    }
-
-    .fieldset {
-        color: $blanco;
-        font-family: $roboto;
-        border: 1px dashed $blanco;
-        border-radius: 10%;
-    }
-
-
-    /* QUINCE */
-    #fotosQuince {
-        display: grid;
-        grid-template-columns: 2fr;
-        grid-template-rows: auto;
-        justify-items: center;
-        row-gap: 10px;
-        column-gap: 10px;
-        margin-bottom: 10px;
-
-        div {
-            img {
-                width: 100%;
-                border: 1px dashed $blanco;
-            }
-        }
     }
 
 }
 
+/* CONTACT US */
 
-@media screen and (min-width: 800px) {
+
+.boxContact {
+    height: 160px;
+    width: 300px;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    border: 2px dashed $blanco;
+    border-radius: 20px;
+}
+
+
+.ordenRedes {
+    gap: 15px;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    top: 59%;
+}
+
+.redesContacto {
+    width: 50px;
+    height: 50px;
+}
+
+.fieldset {
+    color: $blanco;
+    font-family: $roboto;
+    border: 1px dashed $blanco;
+    border-radius: 10%;
+}
+
+
+/* QUINCE */
+#fotosQuince {
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    row-gap: 10px;
+    column-gap: 10px;
+    margin-bottom: 10px;
+
+    div {
+        img {
+            width: 100%;
+            border: 1px dashed $blanco;
+        }
+    }
+}
+
+
+
+@media screen and (min-width: 768px) {
 
     /* Header/Nav */
 
@@ -302,14 +319,8 @@ li {
             }
         }
 
-        video {
-            height: 300px;
-            width: auto;
-        }
-
         .boxNosotros {
-            width: 300px;
-            font-size: 3rem;
+            width: 320px;
         }
     }
 
@@ -356,8 +367,8 @@ li {
     /* ABOUT US*/
 
 
-    .boxModelVideo-aboutUs {
-        width: 100%;
+    .video-ejemplo--nosotros {
+        width: 90%;
         height: auto;
     }
 
@@ -375,7 +386,7 @@ li {
         top: 55%;
     }
 
-    .fieldset{
+    .fieldset {
         width: 400px;
     }
 
