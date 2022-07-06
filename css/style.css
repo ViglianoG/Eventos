@@ -30,11 +30,17 @@ p {
   background-color: rgb(19, 19, 19);
 }
 
+.background-rombo {
+  background-image: url(../assets/img/fondo-rombo.jpg);
+  background-repeat: repeat;
+}
+
 @media screen and (min-width: 320px) {
   /* Header/Nav */
   nav {
+    background-color: rgba(255, 255, 255, 0.5);
+    background-image: linear-gradient(to bottom, transparent 40%, rgb(232, 232, 232));
     height: 40px;
-    background-color: rgb(232, 232, 232);
     position: -webkit-sticky;
     position: sticky;
     top: 0px;
@@ -109,11 +115,13 @@ p {
     font-size: 20px;
     color: rgb(255, 255, 255);
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
   }
 
   /* FOOTER */
   footer {
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.8);
+    background-image: linear-gradient(to top, transparent 40%, rgb(0, 0, 0));
     height: 50px;
     width: 100%;
   }
@@ -144,7 +152,6 @@ p {
   footer .footerLogo {
     position: absolute;
     left: 38%;
-    z-index: 2;
     height: 38px;
     width: 75px;
   }
@@ -152,7 +159,6 @@ p {
     position: relative;
     top: 80%;
     color: rgb(255, 255, 255);
-    text-decoration: none;
     font-family: "Roboto Slab", serif;
     text-align: center;
     font-size: 7px;
@@ -206,6 +212,7 @@ p {
   border-radius: 10%;
 }
 
+/* PRESUPUESTO */
 /* QUINCE */
 #fotosQuince {
   display: grid;
@@ -269,7 +276,7 @@ p {
   }
   footer p {
     font-size: 14px;
-    top: 37%;
+    top: 35%;
   }
 
   .redes-footer {
@@ -280,8 +287,8 @@ p {
   }
 
   /* ABOUT US*/
-  .video-ejemplo--nosotros {
-    width: 90%;
+  div .video-ejemplo--nosotros {
+    width: 100%;
     height: auto;
   }
 
@@ -304,4 +311,7 @@ p {
   #fotosQuince {
     grid-template-columns: 2fr 2fr;
   }
+}
+.hover-card:hover {
+  filter: blur(5px);
 }/*# sourceMappingURL=style.css.map */

@@ -40,6 +40,11 @@ p {
     background-color: map-get($colores-fondo, negro)
 }
 
+.background-rombo {
+    background-image: url(../assets/img/fondo-rombo.jpg);
+    background-repeat: repeat;
+}
+
 
 
 
@@ -55,8 +60,9 @@ p {
 
     /* Header/Nav */
     nav {
+        background-color: rgb(255, 255, 255, 0.5);
+        background-image: linear-gradient(to bottom, transparent 40%, $gris-soft);
         height: 40px;
-        background-color: $gris-soft;
         position: sticky;
         top: 0px;
         opacity: 90%;
@@ -145,6 +151,7 @@ p {
             font-size: 20px;
             color: $blanco;
             text-align: center;
+            background-color: rgb(0, 0, 0, 0.5);
         }
     }
 
@@ -153,7 +160,8 @@ p {
     /* FOOTER */
 
     footer {
-        background-color: $negro;
+        background-color: rgb(0, 0, 0, 0.8);
+        background-image: linear-gradient(to top, transparent 40%, $negro);
         height: 50px;
         width: 100%;
 
@@ -189,7 +197,6 @@ p {
         .footerLogo {
             position: absolute;
             left: 38%;
-            z-index: 2;
             height: 38px;
             width: 75px;
         }
@@ -198,7 +205,6 @@ p {
             position: relative;
             top: 80%;
             color: $blanco;
-            text-decoration: none;
             font-family: $roboto;
             text-align: center;
             font-size: 7px;
@@ -214,8 +220,8 @@ p {
             font-family: $roboto;
             color: $blanco;
             text-align: center;
-            @include subrayado-h1(white, dotted )
-        } 
+            @include subrayado-h1(white, dotted)
+        }
 
     }
 
@@ -260,6 +266,9 @@ p {
     border: 1px dashed $blanco;
     border-radius: 10%;
 }
+
+/* PRESUPUESTO */
+
 
 
 /* QUINCE */
@@ -348,7 +357,7 @@ p {
 
         p {
             font-size: 14px;
-            top: 37%;
+            top: 35%;
         }
     }
 
@@ -367,9 +376,12 @@ p {
     /* ABOUT US*/
 
 
-    .video-ejemplo--nosotros {
-        width: 90%;
-        height: auto;
+    div {
+
+        .video-ejemplo--nosotros {
+            width: 100%;
+            height: auto;
+        }
     }
 
 
@@ -396,4 +408,8 @@ p {
         grid-template-columns: 2fr 2fr;
     }
 
+}
+
+.hover-card:hover{
+    filter: blur(5px);
 }
