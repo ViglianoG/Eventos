@@ -26,19 +26,54 @@ p {
 }
 
 
-
-
-
-/*BACKGROUND*/
+/*BACKGROUND GREY*/
 
 
 .backgroundcolor-grey {
     background-color: map-get($colores-fondo, gris)
 }
 
+.backgroundcolor-grey-dots {
+    @extend .backgroundcolor-grey;
+    background-image: url(../assets/img/puntitos-negros-soft.png);
+    background-repeat: repeat;
+}
+
+.black-dots-heart-garlands {
+    @extend .backgroundcolor-grey;
+    background-image: url(../assets/img/guirnaldas-corazon.png),
+        url(../assets/img/puntitos-negros.png);
+    background-repeat: repeat-x;
+}
+
+/*BACKGROUND BLACK*/
+
 .backgroundcolor-black {
     background-color: map-get($colores-fondo, negro)
 }
+
+.black-soft-dots {
+    @extend .backgroundcolor-black;
+    background-image: url(../assets/img/puntitos-blancos-soft.png);
+    background-repeat: repeat;
+}
+
+.black-soft-dots-stars {
+    @extend .backgroundcolor-black;
+    background-image: url(../assets/img/puntitos-blancos-soft.png),
+        url(../assets/img/estrellas.png);
+    background-repeat: repeat;
+}
+
+.background-garlands {
+    @extend .backgroundcolor-black;
+    background-image: url(../assets/img/guirnaldas.png),
+        url(../assets/img/puntitos.png);
+    background-repeat: repeat-x;
+
+}
+
+
 
 .background-rombo {
     background-image: url(../assets/img/fondo-rombo.jpg);
@@ -54,11 +89,61 @@ p {
     text-decoration-style: $style;
 }
 
+.animacion-bienvenida {
+    animation-name: bienvenida;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    display: flex;
+    position: fixed;
+    z-index: -2;
+}
+
+.bienvenida-fondo {
+    width: 100vw;
+    height: 300vw;
+    @extend .backgroundcolor-grey-dots;
+
+    img {
+        display: flex;
+        position: fixed;
+        top: 20%;
+        left: 27%;
+    }
+}
+
+
+@keyframes bienvenida {
+    0% {
+        opacity: 1;
+        z-index: 10;
+    }
+
+    50% {
+        opacity: 1;
+        z-index: 10;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
 
 @media screen and (min-width: 320px) {
 
 
     /* Header/Nav */
+
+    .bienvenida-fondo {
+        img {
+            height: 120px;
+            width: 240px;
+            top: 20%;
+            justify-content: center;
+        }
+    }
+
+
     nav {
         background-color: rgb(255, 255, 255, 0.5);
         background-image: linear-gradient(to bottom, transparent 40%, $gris-soft);
@@ -115,6 +200,8 @@ p {
             color: $gris-soft;
             margin-top: 1%;
             margin-bottom: 1%;
+            background-image: url(../assets/img/puntitos-negros.png);
+
 
             h1 {
                 z-index: -1;
@@ -232,7 +319,7 @@ p {
         width: 310px;
     }
 
-}
+
 
 /* CONTACT US */
 
@@ -280,20 +367,31 @@ p {
     row-gap: 10px;
     column-gap: 10px;
     margin-bottom: 10px;
+    padding: 10px;
 
     div {
         img {
             width: 100%;
+            height: 100%;
             border: 1px dashed $blanco;
+            object-fit: cover;
         }
     }
 }
-
+}
 
 
 @media screen and (min-width: 768px) {
 
     /* Header/Nav */
+    .bienvenida-fondo {
+        img {
+            height: 275px;
+            width: 609px;
+            top: 27%;
+        }
+    }
+
 
     nav {
         height: 80px;
@@ -406,10 +504,13 @@ p {
     /* QUINCE */
     #fotosQuince {
         grid-template-columns: 2fr 2fr;
+
     }
 
 }
 
-.hover-card:hover{
-    filter: blur(5px);
+.card {
+    &hover {
+        zoom: 150%;
+    }
 }

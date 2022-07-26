@@ -21,13 +21,39 @@ p {
   margin-top: 0;
 }
 
-/*BACKGROUND*/
-.backgroundcolor-grey {
+/*BACKGROUND GREY*/
+.backgroundcolor-grey, .black-dots-heart-garlands, .backgroundcolor-grey-dots, .bienvenida-fondo {
   background-color: rgb(232, 232, 232);
 }
 
-.backgroundcolor-black {
+.backgroundcolor-grey-dots, .bienvenida-fondo {
+  background-image: url(../assets/img/puntitos-negros-soft.png);
+  background-repeat: repeat;
+}
+
+.black-dots-heart-garlands {
+  background-image: url(../assets/img/guirnaldas-corazon.png), url(../assets/img/puntitos-negros.png);
+  background-repeat: repeat-x;
+}
+
+/*BACKGROUND BLACK*/
+.backgroundcolor-black, .background-garlands, .black-soft-dots-stars, .black-soft-dots {
   background-color: rgb(19, 19, 19);
+}
+
+.black-soft-dots {
+  background-image: url(../assets/img/puntitos-blancos-soft.png);
+  background-repeat: repeat;
+}
+
+.black-soft-dots-stars {
+  background-image: url(../assets/img/puntitos-blancos-soft.png), url(../assets/img/estrellas.png);
+  background-repeat: repeat;
+}
+
+.background-garlands {
+  background-image: url(../assets/img/guirnaldas.png), url(../assets/img/puntitos.png);
+  background-repeat: repeat-x;
 }
 
 .background-rombo {
@@ -35,8 +61,65 @@ p {
   background-repeat: repeat;
 }
 
+.animacion-bienvenida {
+  -webkit-animation-name: bienvenida;
+          animation-name: bienvenida;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  display: flex;
+  position: fixed;
+  z-index: -2;
+}
+
+.bienvenida-fondo {
+  width: 100vw;
+  height: 300vw;
+}
+.bienvenida-fondo img {
+  display: flex;
+  position: fixed;
+  top: 20%;
+  left: 27%;
+}
+
+@-webkit-keyframes bienvenida {
+  0% {
+    opacity: 1;
+    z-index: 10;
+  }
+  50% {
+    opacity: 1;
+    z-index: 10;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes bienvenida {
+  0% {
+    opacity: 1;
+    z-index: 10;
+  }
+  50% {
+    opacity: 1;
+    z-index: 10;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 @media screen and (min-width: 320px) {
   /* Header/Nav */
+  .bienvenida-fondo img {
+    height: 120px;
+    width: 240px;
+    top: 20%;
+    justify-content: center;
+  }
+
   nav {
     background-color: rgba(255, 255, 255, 0.5);
     background-image: linear-gradient(to bottom, transparent 40%, rgb(232, 232, 232));
@@ -85,6 +168,7 @@ p {
     color: rgb(232, 232, 232);
     margin-top: 1%;
     margin-bottom: 1%;
+    background-image: url(../assets/img/puntitos-negros.png);
   }
   main #logo-main h1 {
     z-index: -1;
@@ -181,56 +265,66 @@ p {
     height: auto;
     width: 310px;
   }
-}
-/* CONTACT US */
-.boxContact {
-  height: 160px;
-  width: 300px;
-  margin-top: 3%;
-  margin-bottom: 5%;
-  border: 2px dashed rgb(255, 255, 255);
-  border-radius: 20px;
-}
 
-.ordenRedes {
-  gap: 15px;
-  display: flex;
-  position: absolute;
-  justify-content: center;
-  top: 59%;
-}
+  /* CONTACT US */
+  .boxContact {
+    height: 160px;
+    width: 300px;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    border: 2px dashed rgb(255, 255, 255);
+    border-radius: 20px;
+  }
 
-.redesContacto {
-  width: 50px;
-  height: 50px;
-}
+  .ordenRedes {
+    gap: 15px;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    top: 59%;
+  }
 
-.fieldset {
-  color: rgb(255, 255, 255);
-  font-family: "Roboto Slab", serif;
-  border: 1px dashed rgb(255, 255, 255);
-  border-radius: 10%;
-}
+  .redesContacto {
+    width: 50px;
+    height: 50px;
+  }
 
-/* PRESUPUESTO */
-/* QUINCE */
-#fotosQuince {
-  display: grid;
-  grid-template-columns: 2fr;
-  grid-template-rows: auto;
-  justify-items: center;
-  row-gap: 10px;
-  -moz-column-gap: 10px;
-       column-gap: 10px;
-  margin-bottom: 10px;
-}
-#fotosQuince div img {
-  width: 100%;
-  border: 1px dashed rgb(255, 255, 255);
-}
+  .fieldset {
+    color: rgb(255, 255, 255);
+    font-family: "Roboto Slab", serif;
+    border: 1px dashed rgb(255, 255, 255);
+    border-radius: 10%;
+  }
 
+  /* PRESUPUESTO */
+  /* QUINCE */
+  #fotosQuince {
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    row-gap: 10px;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  #fotosQuince div img {
+    width: 100%;
+    height: 100%;
+    border: 1px dashed rgb(255, 255, 255);
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
 @media screen and (min-width: 768px) {
   /* Header/Nav */
+  .bienvenida-fondo img {
+    height: 275px;
+    width: 609px;
+    top: 27%;
+  }
+
   nav {
     height: 80px;
   }
@@ -312,6 +406,6 @@ p {
     grid-template-columns: 2fr 2fr;
   }
 }
-.hover-card:hover {
-  filter: blur(5px);
+.cardhover {
+  zoom: 150%;
 }/*# sourceMappingURL=style.css.map */
